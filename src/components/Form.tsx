@@ -9,10 +9,10 @@ export const Form =({city, setCity, getWeather}: FormPropsType)=> {
         <form onSubmit={getWeather}>
             <input type="text" 
                     name="city" 
-                    placeholder="都市名" 
+                    placeholder="English City Name" 
+                    value={city}
                     onChange={(e)=>setCity(e.target.value)}/>
             <button type="submit">Get Weather</button>
         </form>
-        
     );
 }

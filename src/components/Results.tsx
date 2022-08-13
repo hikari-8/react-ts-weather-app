@@ -9,15 +9,16 @@ type ResultsPropstype = {
 }
 
 export const Results =({results}: ResultsPropstype)=> {
+    const {country, cityName, temperature, conditionText, icon}= results;
     return(
         <>           
-        { results.country && <div className="results-country">{results.country}</div> }     
-        { results.cityName && <div className="results-city">{results.cityName}</div> }
-        { results.temperature && <div className="results-temp">{results.temperature}<span>℃</span></div>}
-        { results.conditionText && 
+        { country && <div className="results-country">{country}</div> }     
+        { cityName && <div className="results-city">{cityName}</div> }
+        { temperature && <div className="results-temp">{temperature}<span>℃</span></div>}
+        { conditionText && 
         <div className="results-condition">
-            <img src={results.icon} alt="icon" />
-            <span>{results.conditionText}</span>
+            <img src={icon} alt="icon" />
+            <span>{conditionText}</span>
             </div> }
         </>
     );

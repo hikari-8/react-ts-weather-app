@@ -1,2 +1,2 @@
 ## React-TS-Weather-App
-### Deploy → 
+### Deploy → https://rad-lokum-668443.netlify.app/
